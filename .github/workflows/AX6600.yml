@@ -18,6 +18,10 @@ on:
         default: 'false'
         required: false
         type: boolean
+      ssh:
+        description: 'SSH connection to Actions'
+        required: false
+        default: 'false'
 
 #CI权限
 permissions: write-all
