@@ -19,7 +19,12 @@ on:
         required: true
         type: choice
         options: [cmlong05/immortalwrt, cmlong05/openwrt-kn, VIKINGYFY/immortalwrt, immortalwrt/immortalwrt, King-Of-Knights/openwrt-6.x, LiBwrt-op/openwrt-6.x]
-    
+      
+      BRANCH:
+        description: 'Default main'
+        required: false
+        type: string
+        
       TARGET: 
           default: 'IPQ60XX-WIFI-YES'
           required: true
@@ -43,7 +48,7 @@ permissions: write-all
 #CI任务
 jobs:
   config:
-    name: ${{matrix.TARGET}}
+    name: ${{inputs.SOURCE}}/${{inputs.TARGET}}
     strategy:
       fail-fast: false
       #max-parallel: 3
@@ -69,7 +74,7 @@ jobs:
       #源码链接
       WRT_REPO: https://github.com/${{inputs.SOURCE}}.git
       #源码分支
-      WRT_BRANCH: ${{matrix.BRANCH || 'main'}}
+      WRT_BRANCH: ${{inputs.BRANCH || 'main'}}
       #源码名称
       WRT_SOURCE: ${{inputs.SOURCE}}
       #插件调整
