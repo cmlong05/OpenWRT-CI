@@ -15,10 +15,10 @@ on:
         type: string
         
       SOURCE:
-        default: 'VIKINGYFY/immortalwrt'
+        default: 'cmlong05/immortalwrt'
         required: true
         type: choice
-        options: [VIKINGYFY/immortalwrt, immortalwrt/immortalwrt, King-Of-Knights/openwrt-6.x, LiBwrt-op/openwrt-6.x]
+        options: [cmlong05/immortalwrt, cmlong05/openwrt-kn, VIKINGYFY/immortalwrt, immortalwrt/immortalwrt, King-Of-Knights/openwrt-6.x, LiBwrt-op/openwrt-6.x]
     
       TEST:
         description: '仅输出配置文件，不编译固件。'
