@@ -48,7 +48,7 @@ permissions: write-all
 #CI任务
 jobs:
   config:
-    name: ${{inputs.SOURCE}}/${{inputs.TARGET}}
+    name: ${{inputs.TARGET}}
     strategy:
       fail-fast: false
       #max-parallel: 3
