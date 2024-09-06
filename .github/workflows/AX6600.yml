@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
     inputs:
       PACKAGE:
-        description: '手动调整插件包，仅限一个。'
+        description: 'PACKAGE: 手动调整插件包，仅限一个。'
         required: false
         type: string
         
@@ -21,7 +21,7 @@ on:
         options: [cmlong05/immortalwrt, cmlong05/openwrt-kn, VIKINGYFY/immortalwrt, immortalwrt/immortalwrt, King-Of-Knights/openwrt-6.x, LiBwrt-op/openwrt-6.x]
       
       BRANCH:
-        description: 'Default main'
+        description: 'SOURCE BRANCH: default blank for main'
         required: false
         type: string
         
