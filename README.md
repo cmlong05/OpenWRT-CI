@@ -26,5 +26,3 @@ Scripts——自定义脚本
 
 Config——自定义配置
 
-mark
-new mark
