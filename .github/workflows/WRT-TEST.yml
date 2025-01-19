@@ -12,10 +12,10 @@ on:
         type: choice
         options: [MEDIATEK, ROCKCHIP, X86, IPQ60XX-WIFI-YES, IPQ60XX-WIFI-NO, IPQ807X-WIFI-YES, IPQ807X-WIFI-NO, TEST]
       SOURCE:
-        default: 'VIKINGYFY/immortalwrt'
+        default: 'cmlong05/immortalwrt'
         required: true
         type: choice
-        options: [VIKINGYFY/immortalwrt, immortalwrt/immortalwrt, LiBwrt/openwrt-6.x, qosmio/openwrt-ipq]
+        options: [cmlong05/immortalwrt, VIKINGYFY/immortalwrt, immortalwrt/immortalwrt, LiBwrt/openwrt-6.x, qosmio/openwrt-ipq]
       BRANCH:
         default: 'main'
         required: true
@@ -44,13 +44,13 @@ jobs:
       #默认主题
       WRT_THEME: argon
       #默认主机名
-      WRT_NAME: OWRT
+      WRT_NAME: office-mu
       #默认WIFI名称
-      WRT_SSID: OWRT
+      WRT_SSID: MU
       #默认WIFI密码
-      WRT_WORD: 12345678
+      WRT_WORD: mubimuba
       #默认地址
-      WRT_IP: 192.168.10.1
+      WRT_IP: 10.10.10.10
       #默认密码，仅作提示，修改无用
       WRT_PW: 无
       #源码链接
