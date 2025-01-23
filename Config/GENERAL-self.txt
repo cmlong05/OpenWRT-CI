@@ -1,6 +1,7 @@
 # used to tracking myself's packages
 
 CONFIG_PACKAGE_python3-pip=y
+CONFIG_PACKAGE_python3-venv=y
 CONFIG_PACKAGE_git-http=y
 CONFIG_PACKAGE_ddns-scripts-cloudflare=y
 CONFIG_PACKAGE_rsyncd=y
